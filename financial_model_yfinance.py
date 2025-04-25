@@ -951,7 +951,7 @@ if __name__ == "__main__":
     optimal_assets = asset_selector.select_optimal_assets(start_date, end_date, num_assets=5)
     
     # Initialize quantum trading strategy
-    strategy = QuantumTradingStrategy(backend_name='ibm_sherbrooke', use_real_hardware=False)
+    strategy = QuantumTradingStrategy(backend_name='ibm_sherbrooke', use_real_hardware=True)
     
     # Backtest strategy
     backtest_results = strategy.backtest(optimal_assets, start_date, end_date, optimize_params=True)
