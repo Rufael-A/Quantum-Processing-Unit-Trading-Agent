@@ -278,7 +278,7 @@ class QuantumTradingStrategy:
     to create and optimize trading strategies.
     """
     
-    def __init__(self, backend_name='ibm_sherbrooke', use_real_hardware=False):
+    def __init__(self, backend_name='ibm_sherbrooke', use_real_hardware=True):
         """
         Initialize the Quantum Trading Strategy.
         
